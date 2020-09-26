@@ -215,7 +215,7 @@ public class MadisonBuffet implements MapADT<String, Double> {
       if (hashTable[i] == null) {
         continue;
       } else {
-        for (int j = 0; j <= hashTable[i].size(); ++j) {
+        for (int j = 0; j < hashTable[i].size(); ++j) {
           output = output + hashTable[i].get(j).name + ": " + hashTable[i].get(j).rating + "\n";
         }
       }
@@ -235,7 +235,7 @@ public class MadisonBuffet implements MapADT<String, Double> {
       if (hashTable[i] == null) {
         continue;
       } else {
-        for (int j = 0; j <= hashTable[i].size(); ++j) {
+        for (int j = 0; j < hashTable[i].size(); ++j) {
           if (hashTable[i].get(j).name.equalsIgnoreCase(name)) {
             output = hashTable[i].get(j).name + ": " + hashTable[i].get(j).rating + "\n";
             return output;
